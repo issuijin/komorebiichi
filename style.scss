@@ -156,7 +156,7 @@ ul {
       width: 60px
     }
     >.text {
-      padding: 50px 0;
+      padding: 50px 20px;
     }
   }
 }
@@ -317,8 +317,9 @@ ul {
 
 footer {
   margin-top: 60px;
-  padding: 10px 0;
+  padding: 15px 0;
   text-align: center;
+  font-size: 0.875rem;
   background-color: #63936E;
   color: white;
 }
