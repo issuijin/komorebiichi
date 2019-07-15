@@ -64,9 +64,16 @@ ul {
     >.logo {
       padding-top: 0;
       width: 160px;
+      height: 51px;
     }
   }
   @media screen and (max-width:1024px) {
+    padding: 15px 30px;
+    width: calc(100% - 60px);
+    >.logo {
+      width: 128px;
+      height: 40px;
+    }
     >.menu {
       display: none;
     }
@@ -75,7 +82,8 @@ ul {
 
 .is-scroll {
   background-color:  rgb(187, 165, 136);
-  padding: 15px 60px;
+  padding: 15px 30px;
+  width: calc(100% - 60px);
   >.logo {
     padding-top: 0;
     width: 128px;
@@ -155,7 +163,6 @@ ul {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 60px;
-  margin-bottom: 100px;
   >.text {
     background-image: url('./item/top/texture2.png');
     @extend .back-setting;
@@ -185,6 +192,7 @@ ul {
 
   @media screen and (max-width:896px) {
     display: block;
+    margin-top: 0;
     >.text {
       width: calc(100% - 60px);
       padding: 20px 0 60px 60px;
@@ -202,25 +210,33 @@ ul {
 // ボタン //
 
 .button-4{
-  margin: 0 20px 0 0;
+  margin: 20px 20px 0 0;
   width:140px;
-  height:40px;
+  height:50px;
   border: 1px solid #34495e;
   text-align:center;
   cursor: pointer;
   position:relative;
   box-sizing:border-box;
   overflow:hidden;
+  a {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    color:#34495e;
+    text-decoration:none;
+    line-height:45px;
+    transition:all .3s ease;
+    z-index:2;
+    position:relative;
+  }
+  @media screen and (max-width:1024px) {
+    margin-top: 0;
+    height:40px;
+    a {
+      line-height:38px;
+    }
+  }
 }
-.button-4 a{
-  font-family: fot-tsukuardgothic-std, sans-serif;
-  color:#34495e;
-  text-decoration:none;
-  line-height:40px;
-  transition:all .3s ease;
-  z-index:2;
-  position:relative;
-}
+
 .eff-4{
   width:140px;
   height:50px;
@@ -235,4 +251,33 @@ ul {
 }
 .button-4:hover a{
   color:#fff;
+}
+
+
+.event-box {
+  position: relative;
+  margin-top: 60px;
+  >img {
+    max-width: calc(70% + 10px);
+    width: 100%;
+  }
+  >.text {
+    position: absolute;
+    top: calc(50% - 220px);
+    right: 0;
+    background-image: url('./item/top/texture3.jpg');
+    @extend .back-setting;
+    padding: 30px 50px 30px 60px;
+    width: calc(50%)
+  }
+  @media screen and (max-width:1024px) {
+    top: calc(50% - 168px);
+  }
+  @media screen and (max-width:896px) {
+    display: block;
+    margin-top: 100px;
+    >.text {
+      padding: 20px 20px 60px 30px;
+    }
+  }
 }
