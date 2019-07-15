@@ -81,7 +81,7 @@ ul {
 }
 
 .is-scroll {
-  background-color:  rgb(187, 165, 136);
+  background-color: #63936E;
   padding: 15px 30px;
   width: calc(100% - 60px);
   >.logo {
@@ -194,8 +194,8 @@ ul {
     display: block;
     margin-top: 0;
     >.text {
-      width: calc(100% - 60px);
-      padding: 20px 0 60px 60px;
+      width: calc(100% - 50px);
+      padding: 20px 20px 60px 30px;
     }
     >.image {
       width: 100%
@@ -258,12 +258,12 @@ ul {
   position: relative;
   margin-top: 60px;
   >img {
-    max-width: calc(70% + 10px);
+    max-width: 70%;
     width: 100%;
   }
   >.text {
     position: absolute;
-    top: calc(50% - 220px);
+    top: calc(50% - 160px);
     right: 0;
     background-image: url('./item/top/texture3.jpg');
     @extend .back-setting;
@@ -271,13 +271,45 @@ ul {
     width: calc(50%)
   }
   @media screen and (max-width:1024px) {
-    top: calc(50% - 168px);
-  }
-  @media screen and (max-width:896px) {
-    display: block;
-    margin-top: 100px;
     >.text {
-      padding: 20px 20px 60px 30px;
+      top: calc(50% - 126px);
     }
   }
+  @media screen and (max-width:896px) {
+    margin-top: 0px;
+    >img {
+      position: initial;
+      max-width: 100%;
+    }
+    >.text {
+      position: initial;
+      padding: 20px 20px 60px 30px;
+      width: calc(100% - 50px);
+    }
+  }
+}
+
+.apply-box {
+  @extend .event-box;
+  >img {
+    position: relative;
+    left: 30%;
+  }
+  >.text {
+    right: initial;
+    left: 0;
+  }
+  @media screen and (max-width:896px) {
+    >img {
+      left: 0;
+    }
+  }
+}
+
+footer {
+  margin-top: 60px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #63936E;
+  color: white;
 }
