@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width  initial-scale=1">
+    <!-- Title -->
+    <title>木漏れ日市</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'fup7lgm',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+</head>
+
+<body>
+<header class="header-box">
+    <img class="logo" src="./item/top/logo.png" alt="">
+    <ul class="menu">
+      <li><img src="./item/top/list1.png">開催概要</li>
+      <li><img src="./item/top/list2.png">新着情報</li>
+      <li><img src="./item/top/list3.png">募集要項</li>
+      <!--<li><img src="./item/top/list4.png">実行委員</li>-->
+      <li><img src="./item/top/list5.png">お問い合わせ</li>
+    </ul>
+</header>
+<main>
+    <section class="main-visual">
+      <div class="text">
+        <h3>手作りのぬくもりと森のやさしさを</h3>
+        <p>2019年11月16日(土) </p>
+      </div>
+    </section>
+    <section class="about-box">
+      <div class="text">
+        <h3>木漏れ日市とは</h3>
+        <p>ものづくりが大好きなひとたちが作る心のこもった作品とふれ合い<br>安心の素材でていねいに作られたおいしい食べものをいただけば、心と体がぽかぽか笑顔に。<br>ものづくり体験を通じて「生みだすよろこび」を次の世代につなげたい。<br>森に囲まれた小さな広場で心地よい風に吹かれたら<br>この地をもっと好きになれるはず。</p>
+      </div>
+      <div class="image">
+        <img class="left" src="./item/top/leaf.png" alt="">
+        <img class="right" src="./item/top/squirrel.png" alt="">
+      </div>
+    </section>
+</main>
+<footer>© 2019 komorebiichi</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+  jQuery(function($){
+  $(window).on('load scroll', function(){
+    if ($(window).scrollTop() > 100) {
+      $('.header-box').addClass('is-scroll');
+    } else {
+      $('.header-box').removeClass('is-scroll');
+    }
+  });
+});
+</script>
+</body>
+</html>
