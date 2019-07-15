@@ -107,6 +107,9 @@ ul {
     top: 0;
     margin: calc(50vh - 80px) 0 0 0;
     width: 100%;
+    span {
+      letter-spacing: 0.2rem!important;
+    }
   }
 }
 
@@ -319,6 +322,7 @@ footer {
   margin-top: 60px;
   padding: 15px 0;
   text-align: center;
+  font-family: fot-tsukuardgothic-std, sans-serif;
   font-size: 0.875rem;
   background-color: #63936E;
   color: white;
