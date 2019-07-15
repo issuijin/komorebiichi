@@ -17,6 +17,7 @@ h3 {
 p,a {
   font-size: 1.25rem;
   line-height: 1.5;
+  text-decoration: none;
   @media screen and (max-width:1024px) {
     font-size: 0.875rem;
   }
@@ -58,6 +59,9 @@ ul {
         max-width: 20px;
         max-height: 19px;
       }
+      a {
+        color: white;
+      }
     }
   }
   @media screen and (max-width:1200px) {
@@ -68,8 +72,6 @@ ul {
     }
   }
   @media screen and (max-width:1024px) {
-    padding: 15px 30px;
-    width: calc(100% - 60px);
     >.logo {
       width: 128px;
       height: 40px;
@@ -82,8 +84,8 @@ ul {
 
 .is-scroll {
   background-color: #63936E;
-  padding: 15px 30px;
-  width: calc(100% - 60px);
+  padding: 15px 60px;
+  width: calc(100% - 120px);
   >.logo {
     padding-top: 0;
     width: 128px;
@@ -226,7 +228,11 @@ ul {
     line-height:45px;
     transition:all .3s ease;
     z-index:2;
-    position:relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   @media screen and (max-width:1024px) {
     margin-top: 0;
