@@ -297,6 +297,7 @@
   >.text {
     margin-left: calc(5vw + 60px);
     @media screen and (max-width:896px) {
+      width: calc(100% - 70px);
       margin-left: calc(2vw + 30px);
     }
   }
