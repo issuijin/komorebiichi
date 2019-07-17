@@ -11,6 +11,7 @@
     top: 0;
     margin: calc(50vh - 80px) 0 0 0;
     width: 100%;
+    line-height: 1.3;
     span {
       letter-spacing: 0.2rem!important;
     }
@@ -181,7 +182,10 @@
     background-image: url("../item/top/texture3.jpg");
     @extend .back-setting;
     padding: 30px 50px 30px 60px;
-    width: calc(50%)
+    width: calc(50%);
+    >.buttons {
+      display:flex;
+    }
   }
   @media screen and (max-width:1024px) {
     >.text {
@@ -218,6 +222,41 @@
   @media screen and (max-width:896px) {
     >img {
       left: 0;
+    }
+  }
+}
+
+
+
+.sub-page {
+  >.key-visual {
+    background-image: url('../item/top/main_visual.jpg');
+    @extend .back-setting;
+    width: 100%;
+    height: 150px;
+    padding: 150px 0 0 0;
+    >.text {
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    @media screen and (max-width:1024px) {
+      height: 100px;
+      padding: 100px 0 0 0;
+    }
+  }
+  >.about-box {
+    min-height: 220px;
+    background-image: url("../item/top/texture1.png");
+    @extend .back-setting;
+    >.text {
+      padding: 70px 0;
+      text-align: center;
+      h3 {
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 }

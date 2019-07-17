@@ -26,3 +26,16 @@ p,a {
 ul {
   list-style: none
 }
+.sp {
+  display: none;
+  @media screen and (max-width:480px) {
+    display: block;
+  }
+}
+
+.mb60-pc {
+  margin-bottom: 60px;
+  @media screen and (max-width:896px) {
+    margin-bottom: 0;
+  }
+}

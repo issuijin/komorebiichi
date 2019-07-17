@@ -8,7 +8,7 @@
   left: 0;
   padding: 30px 60px;
   width: calc(100% - 120px);
-  >.logo {
+  >.logo >img {
     padding-top: 20px;
     width: 320px;
   }
@@ -32,10 +32,10 @@
     }
   }
   @media screen and (max-width:1200px) {
-    >.logo {
+    >.logo >img{
       padding-top: 0;
-      width: 160px;
-      height: 51px;
+      width: 120px;
+      height: 38px;
     }
   }
   @media screen and (max-width:1024px) {
