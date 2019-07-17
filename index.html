@@ -8,7 +8,7 @@
     <!-- Title -->
     <title>木漏れ日市</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/import.css">
     <script>
         (function(d) {
           var config = {
@@ -21,26 +21,15 @@
     </script>
 </head>
 
-<!-- <body>
+<body>
 <header class="header-box">
     <img class="logo" src="./item/top/logo.png" alt="">
     <ul class="menu">
-      <li><img src="./item/top/list1.png"><a href="#about-box" target="_blank">開催概要</a></li>
-      <li><img src="./item/top/list2.png"><a href="#news-box" target="_blank">新着情報</a></li>
-      <li><img src="./item/top/list3.png"><a href="#event-box" target="_blank">募集要項</a></li>
+      <li><img src="./item/top/list1.png"><a href="#about-box">開催概要</a></li>
+      <li><img src="./item/top/list2.png"><a href="#news-box">新着情報</a></li>
+      <li><img src="./item/top/list3.png"><a href="#event-box">募集要項</a></li>
       <li><img src="./item/top/list4.png">実行委員</li>
-      <li><img src="./item/top/list5.png"><a href="#apply-box" target="_blank">お問い合わせ</a></li>
-    </ul>
-</header> -->
-
-<header class="header-box">
-    <img class="logo" src="./item/top/logo.png" alt="">
-    <ul class="menu">
-      <li><img src="./item/top/list1.png">開催概要</li>
-      <li><img src="./item/top/list2.png">新着情報</li>
-      <li><img src="./item/top/list3.png">募集要項</li>
-      <!--<li><img src="./item/top/list4.png">実行委員</li>-->
-      <li><img src="./item/top/list5.png">お問い合わせ</li>
+      <li><img src="./item/top/list5.png"><a href="#apply-box">お問い合わせ</a></li>
     </ul>
 </header>
 <main>
@@ -121,20 +110,27 @@
       </section>
 </main>
 <footer>© 2019 komorebiichi</div>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
   jQuery(function($){
   $(window).on('load scroll', function(){
-    if ($(window).scrollTop() > 100) {
-      $('.header-box').addClass('is-scroll');
-    } else {
-      $('.header-box').removeClass('is-scroll');
-    }
+      if ($(window).scrollTop() > 100) {
+        $('.header-box').addClass('is-scroll');
+      } else {
+        $('.header-box').removeClass('is-scroll');
+      }
+    });
   });
-});
+  $(function(){
+    $('a[href^="#"]').click(function(){
+      var speed = 500;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - 83;
+      $("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+    });
+  });
 </script>
 </body>
 </html>
