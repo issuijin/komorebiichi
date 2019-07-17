@@ -273,6 +273,15 @@
     }
   }
   @media screen and (max-width:896px) {
+    >.apply-box >.text >h3 {
+      padding-top: 20px
+    }
+    >.event-box >.text {
+      padding-top: 0;
+      >h3 {
+        margin-top: 20px;
+      }
+    }
     >.event-box,>.apply-box {
       display: block;
       margin-left: 5vw;
