@@ -39,3 +39,13 @@ ul {
     margin-bottom: 0;
   }
 }
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.mb30-sp {
+  @media screen and (max-width:896px) {
+    margin-bottom: 30px;
+  }
+}

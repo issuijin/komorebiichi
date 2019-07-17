@@ -69,3 +69,11 @@
     width: calc(100% - 60px);
   }
 }
+
+.header-box.sub {
+  >.logo >img {
+    padding-top: 0;
+    width: 128px;
+    height: 40px;
+  }
+}

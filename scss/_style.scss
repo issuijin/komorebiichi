@@ -259,4 +259,25 @@
       }
     }
   }
+  >.event-box,>.apply-box {
+    display: inline-block;
+    width: initial;
+    >.text {
+      position: relative;
+      background-image: none;
+      width: calc(50vw - 112px);
+      @media screen and (max-width: 896px) {
+        width: calc(50vw - 52px)
+      }
+    }
+  }
+  @media screen and (max-width:480px) {
+    >.event-box,>.apply-box {
+      display: block;
+      >.text {
+        padding-bottom: 10px;
+        width: calc(100% - 70px);
+      }
+    }
+  }
 }
