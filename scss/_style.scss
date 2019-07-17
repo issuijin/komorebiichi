@@ -259,24 +259,28 @@
       }
     }
   }
+  >.apply-box {
+    margin-left: 5vw;
+  }
   >.event-box,>.apply-box {
     display: inline-block;
     width: initial;
     >.text {
       position: relative;
       background-image: none;
-      width: calc(50vw - 112px);
-      @media screen and (max-width: 896px) {
-        width: calc(50vw - 52px)
-      }
+      width: calc(45vw - 112px);
     }
   }
-  @media screen and (max-width:480px) {
+  @media screen and (max-width:896px) {
     >.event-box,>.apply-box {
       display: block;
+      margin-left: 5vw;
       >.text {
         padding-bottom: 10px;
         width: calc(100% - 70px);
+      }
+      @media screen and (max-width:896px) {
+        margin-left: 2vw;
       }
     }
   }
