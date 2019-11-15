@@ -92,7 +92,7 @@
     margin: 0;
     li {
       width: 25%;
-      height: calc(12.5vw + 5px);      
+      height: calc(12.5vw + 5px);
       overflow: hidden;
       img {
         height: 100%
@@ -112,7 +112,7 @@
     }
     >.image li {
       width: 25%;
-      height: 25vw;     
+      height: 25vw;
     }
   }
 }
@@ -302,3 +302,32 @@
     }
   }
 }
+
+.map-box {
+  >h3 {
+    width: 100%;
+    text-align: center;
+  }
+  >.box {
+    margin: 0 auto 50px auto;
+    display: flex;
+    align-items: flex-start;
+    max-width: 896px;
+    >iframe,>p {
+      width: 46%;
+      margin: 0 2%;
+    }
+    @media screen and (max-width:896px) {
+      display: block;
+      >iframe, >p {
+        width: 96%;
+        height: 300px;
+        margin: 0 2% 2% 2%;
+      }
+      >p {
+        height: initial;
+      }
+    }
+  }
+}
+
